@@ -1,0 +1,21 @@
+main: x.entt.XDragons.Main
+name: XDragons
+version: 1.0.0
+api-version: "1.21"
+authors:
+  - KiteGG
+  - Enttbot
+
+commands:
+  xdragons:
+    description: Manage dragons
+    aliases:
+      - xd
+
+permissions:
+  xdragons.spawn:
+    description: Allows spawning dragons
+    default: op
+  xdragons.admin:
+    description: Allows admin and GUI commands
+    default: op

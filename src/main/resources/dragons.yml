@@ -1,0 +1,64 @@
+dragons:
+  1:
+    name: "Legendary Dragon"
+    max-health: 200
+    show-bossbar: true
+    waypoints:
+      - "world,100,2,100"
+      - "world,200,2,200"
+      - "world,150,2,150"
+      - "world,100,2,100"
+    movement:
+      speed: 0.8
+      threshold: 3.0
+      update-interval: 10
+    attack:
+      chance: 0.03
+      range: 5.0
+      damage: 4.0
+    abilities:
+      fireball:
+        chance: 0.05
+        range: 30.0
+      thunderbolt:
+        chance: 0.03
+        range: 20.0
+      rush:
+        chance: 0.03
+        range: 20.0
+        distance: 10.0
+    phases:
+      high:
+        health: 150
+        abilities:
+          fireball:
+            chance: 0.03
+            range: 25.0
+          thunderbolt:
+            chance: 0.02
+            range: 15.0
+          rush:
+            chance: 0.02
+            range: 15.0
+            distance: 8.0
+        attack:
+          chance: 0.02
+          range: 4.0
+          damage: 3.0
+      low:
+        health: 50
+        abilities:
+          fireball:
+            chance: 0.07
+            range: 35.0
+          thunderbolt:
+            chance: 0.05
+            range: 25.0
+          rush:
+            chance: 0.05
+            range: 25.0
+            distance: 12.0
+        attack:
+          chance: 0.05
+          range: 6.0
+          damage: 5.0
